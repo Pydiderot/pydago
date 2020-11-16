@@ -1,6 +1,8 @@
-# Python à Diderot : pydiderot
+# Python pour les pédagogues: pydago
 ## A propos
-Ce projet fournit un environnement de développement du langage Python portable correspondant à celui utilisé par les élèves et les professeurs du lycée Denis Diderot à Marseille.
+
+Partage pédagogique sur l'enseignement de Python dans le secondaire.
+
 
 Le projet a démarré en 2018. Il se base sur le programme de mathématiques de [Seconde de 2009](https://cache.media.education.gouv.fr/file/30/52/3/programme_mathematiques_seconde_65523.pdf) et l'enseignement de Python aux élèves de Seconde.
 
