@@ -2,4 +2,4 @@
 
 Partage pédagogique sur l'enseignement de Python dans le secondaire.
 
-Par [içi](https://pydago.readthedocs.io/)
+Par [ici](https://pydago.readthedocs.io/)
