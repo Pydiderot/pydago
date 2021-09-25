@@ -117,7 +117,7 @@ Pour y aller en douceur, on peut par exemple faire une première activité "déb
 
 Un exemple d'activité débranchée où le codage de `j=j+1` s'impose :
 
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/variable_necessaire.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/variable_necessaire.PNG
     :align: center
     :width: 200px
 
@@ -132,7 +132,7 @@ Remarques générales : la notion de boucle pose moins de problème aux élèves
 
 Un exemple d'image qu'on peut générer avec une fonction "entier_aleatoire()" et des boucles de type "répéter 1000 fois". Aucune variable n'est nécessaire.
 
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/avec_fonction_mais_sans_variable.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/avec_fonction_mais_sans_variable.PNG
     :align: center
     :width: 200px
 
@@ -145,7 +145,7 @@ Propositions de remèdes : aller progressivement, faire faire prendre conscience
 Voici un exemple d'activité débranchée pour mettre en évidence l'intérêt de faire une boucle.
 Cependant, on n'a pas besoin spécialement d'une boucle "while" !
 
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/boucle_necessaire.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/boucle_necessaire.PNG
     :align: center
     :width: 200px
 
@@ -273,33 +273,33 @@ Quand on lit tout ce qui a été mutualisé, on peut regrouper les activités en
 
 Une consigne très bête, mais parfois très utile : *recopiez ces lignes de code et faites les s'exécuter sur votre machine !*
 
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/consigne_recopier_solution.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/consigne_recopier_solution.PNG
     :align: center
     :width: 400px
 
 Une consigne un peu différente : *recopiez puis analysez*
     
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/consigne_recopier_puis_analyser.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/consigne_recopier_puis_analyser.PNG
     :align: center
     :width: 400px
 
 Une autre consigne, qui marche super bien mais qui n'apprend sans doute pas réellement aux élèves à coder : *modifiez ces lignes de code pour qu'on obtienne tel ou tel résultat* (Les élèves aiment bien et ils arrivent assez vite au résultat demandé en tâtonnant. Cependant : ils s'inventent des tas de "théorèmes élèves" sur le code qu'ils manipulent (c'est à dire qu'ils le comprennent souvent assez mal). Par ailleurs, si on leur demande par la suite de coder un petit programme à partir de zéro, c'est assez catastrophique si ça n'a pas été travaillé également de façon approfondie.
 
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/consigne_modif_code.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/consigne_modif_code.PNG
     :align: center
     :width: 300px
 
 Un exemple de consigne totalement non technique (là, au contraire, il s'agit vraiment de codage !) : 
 
 
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/consignes_non_techniques2.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/consignes_non_techniques2.PNG
     :align: center
     :width: 500px
 
 Un exemple de type "mini projet" où la consigne est très libre.
 Cependant, le guidage provient du fait que les élèves vont essentiellement copier les exemples qui ont été travaillés précédemment.
 
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/consigne_liberte_guidee.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/consigne_liberte_guidee.PNG
     :align: center
     :width: 500px
 
@@ -309,13 +309,13 @@ Quand on lit tout ce qui a été mutualisé, on peut aussi regrouper les activit
 
 Ici, un problème d'algorithmique devient le prétexte pour une étude mathématique qui utilise la notion d'intervalle de façon un peu inhabituelle :
 
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/algo_pretexte_pour_etude_math.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/algo_pretexte_pour_etude_math.PNG
     :align: center
     :width: 600px
 
 Ici, on veut tester (en 1STD2A, sans avoir les moyens de le justifier mathématiquement) que la dérivée de la fonction carré est x->2x. Pour cela, on trace à l'aide d'une boucle for pleins de tangentes en calculant leurs coefficients directeurs grâce à cette fonction. Le résultat est une famille de droites faisant apparaître clairement la parabole de la fonction carré. C'est à la fois beau et convaincant.
 
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/prof_programme_util_justif_exp_math.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/prof_programme_util_justif_exp_math.PNG
     :align: center
     :width: 250px
 
