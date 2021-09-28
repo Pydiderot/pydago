@@ -1,0 +1,91 @@
+# Formation Python 3 : échanges équipe de maths / équipe de physique
+
+## 1. Aspects techniques
+
+### L'IDE Thonny
+.. figure:: https://thonny.org/img/get_started.png
+    :align: right
+    :width: 200px
+
+A partir du bureau des ordinateurs du lycée: `Logiciels > Python > Thonny`
+
+Quand on lance Thonny, il y a deux zones :
+
+- la zone du haut où on travaille dans un fichier, qui peut être exécuté quand on le demande, et qui DOIT 
+être enregistré (sur cette image, le fichier s'appelle "Hello.py")
+- la zone du bas qui est un **shell** (ou **console**) : comme un écran de calculatrice, mais qui exécute des commandes Python 
+(on ne peut pas l'enregistrer)(c'est dans cette zone qu'apparaissent les résultats des commandes exécutées 
+depuis un fichier de la zone du haut)
+
+#### Quelques instructions à essayer dans la console :
+```python
+3 + 4
+print("hello world")
+"hello" + "world"
+```
+#### Quelques exemples à enregistrer dans un fichier :
+```python
+3 + 4
+print("hello world")
+"hello" + "world"
+```
+Pour exécuter le fichier, il faut cliquer sur le bouton |run|  ou appuyer sur :guilabel:`F5`.
+Il faut donner un nom au fichier. Le fichier sera sauvegardé par défaut dans : `U:\Documents`
+
+.. |run| image:: /source/_static/bouton_run.png
+
+#### Quelques remarques pour l'utilisation avec les élèves :
+
+ - Lors de la vidéoprojection de thonny, les caractères sont trop petits. On peut utiliser 
+ :guilabel:`ctrl` + :guilabel:`+` ou :guilabel:`ctrl` +  :guilabel:`molette` pour zoomer.
+ - La config est enregistrée automatiquement quand on quitte thonny.
+ - Pour afficher les numéros des lignes:
+ :guilabel:`Tools` → :guilabel:`Otions` → :guilabel:`Editor` → :guilabel:`Show lines numbers`
+- La notion de variable informatique n'est pas du tout évidente à appréhender pour les élèves. Il peut être 
+bon d'expliquer que concrètement, à chaque nouvelle variable `x`, la machine va créer un espace (une boite) 
+dans la mémoire vive étiquetée par le nom de la variable (`x`). Nous pouvons ensuite lire le contenu de la 
+boite avec `print(x)` et changer ce qu'elle contient avec par exemple `x = 3`.
+
+.. figure:: https://thonny.org/img/variables.png
+    :align: right
+    :width: 200px
+
+- Pour l'affichage dynamique du contenu des variables accessible dans le menu 
+:guilabel:`View` → :guilabel:`Variables` 
+(Son utilisation n'est **pas compatible avec l'import de librairies**. En effet, l'onglet 
+affichera le contenu de toutes les fonctions et variables importées ce qui peut ralentir considérablement 
+l'utilisation.)
+
+- Pour exécuter en mode débug : bouton |bouton_debug| ou touches :guilabel:`crtl` + :guilabel:`F5`  
+qui permet l'éxécution du script en mode « pas à pas ». Cela activera le menu debug :|menu_debug|
+
+### montrer iTALC
+### procédure pour installer des librairies  (en parler très rapidement, du genre : vérifier que la librairie n'est pas déjà installée puis envoyer mail à Bruno Sartor ?)
+### librairies de pydiderotlibs : ne pas tout montrer en détail mais montrer où elles sont
+### montrer site pydiderot https://github.com/Pydiderot car c'est là qu'on pourra trouver les notes de la formation ainsi que les librairies "maison" et des liens pour télécharger thonny
+
+## 2. Aspects pédagogiques
+
+- notions à enseigner et progression : ci-dessous un copié collé de https://pydago.readthedocs.io/formation/enseignants2.html#progression :
+- exemple en seconde :
+une fonction qui n'utilise presqu'aucune variable :
+
+from pydiderotlibs.repere import *
+from random import randint
+def flocon():
+    x=randint(-100,100)/10
+    y=randint(-100,100)/10
+    point(x,y,'pink',2)
+    
+fenetre()
+flocon()
+
+une boucle utilisant la fonction précédente et utilisant une variable, mais n'utilisant aucune liste :
+
+i=0
+while i<1000 :
+    flocon()
+    i=i+1
+
+- exemple en première : perso je n'ai rien à proposer...
+- difficultés techniques : voir ici : https://pydago.readthedocs.io/formation/enseignants2.html#difficultes 
