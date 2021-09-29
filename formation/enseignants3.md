@@ -51,7 +51,8 @@ boite avec `print(x)` et changer ce qu'elle contient avec par exemple `x = 3`.
     :align: right
     :width: 200px
 
-- Pour l'affichage dynamique du contenu des variables 
+- Pour l'affichage dynamique du contenu des variables :
+
 :guilabel:`Affichage` → :guilabel:`Variables` 
 (A désactiver lorsqu'on importe de grosses librairies car sinon l'onglet 
 affichera le contenu de toutes les fonctions et variables importées, ce qui peut ralentir 
