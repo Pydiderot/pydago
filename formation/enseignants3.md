@@ -66,12 +66,12 @@ qui permet l'éxécution du script en mode « pas à pas ». Cela activera le me
 
 ### iTALC
 
-Ce qui ne marche pas : parler à un groupe d'élèves devant leur écran.
+Ce qui ne marche pas : parler à un groupe d'élèves qui sont chacun devant leur écran.
 
 Le petit outil iTALC (dans une salle informatique, accessible depuis : `Outils Profs > iTALC`) permet de mieux gérer les moments où on réclame
 l'attention des élèves.
 
-.. figure:: https://raw.githubusercontent.com/cspaier/pydiderot/dev/docs/formation/Capture_iTALC.PNG
+.. figure:: https://raw.githubusercontent.com/Pydiderot/pydago/main/formation/Capture_iTALC.PNG
     :align: right
     :width: 600px
 
