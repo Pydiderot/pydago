@@ -14,7 +14,7 @@ Quand on lance Thonny, il y a deux zones :
 - la zone du haut où on travaille dans un fichier, qui peut être exécuté quand on le demande, et qui DOIT 
 être enregistré (sur cette image, le fichier s'appelle "Hello.py")
 - la zone du bas qui est un **shell** (ou **console**) : comme un écran de calculatrice, mais qui exécute des commandes Python 
-(on ne peut pas l'enregistrer)
+(on ne peut pas l'enregistrer).
 C'est dans cette zone qu'apparaissent les résultats des commandes exécutées 
 depuis un fichier de la zone du haut.
 
@@ -41,8 +41,8 @@ Il faut donner un nom au fichier. Le fichier sera sauvegardé par défaut dans :
  :guilabel:`ctrl` + :guilabel:`+` ou :guilabel:`ctrl` +  :guilabel:`molette` pour zoomer.
  - La config est enregistrée automatiquement quand on quitte thonny.
  - Pour afficher les numéros des lignes:
- :guilabel:`Tools` → :guilabel:`Otions` → :guilabel:`Editor` → :guilabel:`Show lines numbers`
-- La notion de variable informatique n'est pas du tout évidente à appréhender pour les élèves. Il peut être 
+ :guilabel:`Outils` → :guilabel:`Otions` → :guilabel:`Editeur` → :guilabel:`Afficher les numéros de ligne`
+ - La notion de variable informatique n'est pas du tout évidente à appréhender pour les élèves. Il peut être 
 bon d'expliquer que concrètement, à chaque nouvelle variable `x`, la machine va créer un espace (une boite) 
 dans la mémoire vive étiquetée par le nom de la variable (`x`). Nous pouvons ensuite lire le contenu de la 
 boite avec `print(x)` et changer ce qu'elle contient avec par exemple `x = 3`.
@@ -51,14 +51,18 @@ boite avec `print(x)` et changer ce qu'elle contient avec par exemple `x = 3`.
     :align: right
     :width: 200px
 
-- Pour l'affichage dynamique du contenu des variables accessible dans le menu 
-:guilabel:`View` → :guilabel:`Variables` 
-(Son utilisation n'est **pas compatible avec l'import de librairies**. En effet, l'onglet 
-affichera le contenu de toutes les fonctions et variables importées ce qui peut ralentir considérablement 
+- Pour l'affichage dynamique du contenu des variables 
+:guilabel:`Affichage` → :guilabel:`Variables` 
+(A désactiver lorsqu'on importe de grosses librairies car sinon l'onglet 
+affichera le contenu de toutes les fonctions et variables importées, ce qui peut ralentir 
 l'utilisation.)
 
 - Pour exécuter en mode débug : bouton |bouton_debug| ou touches :guilabel:`crtl` + :guilabel:`F5`  
 qui permet l'éxécution du script en mode « pas à pas ». Cela activera le menu debug :|menu_debug|
+
+.. |bouton_debug| image:: /source/_static/bouton_debug.png
+.. |menu_debug| image:: /source/_static/menu_debug.png
+
 
 ### iTALC
 
