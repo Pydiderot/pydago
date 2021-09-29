@@ -189,4 +189,4 @@ peut rendre service dans certains cas, avec des élèves débutants) :
 ```python
 repeat(f,10)
 ```
-(Ici on demande de répéter 10 fouis la fonction f.)
+(Ici on demande de répéter 10 fois la fonction f.)
