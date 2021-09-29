@@ -78,16 +78,16 @@ l'attention des élèves.
 
 Avec iTALC on peut : 
 
-- verrouiller tous les écrans(il y a souvent un ou deux écrans qui ne se verrouillent pas !)
-- envoyer son écran dans les écrans de tous les élèves (avec la commande "démo"
+- verrouiller tous les écrans (il y a parfois un ou deux écrans qui ne se verrouillent pas !)
+- envoyer le contenu de son écran vers les écrans de tous les élèves (avec la commande "démo")
 - annoncer au groupe "je vais vous envoyer l'écran de -nom d'élève-" (avec la commande clic droit > "laisser faire une démo")
 
-### Procédure pour installer des librairies  (en parler très rapidement, du genre : vérifier que la librairie n'est pas déjà installée puis envoyer mail à Bruno Sartor ?)
+### Procédure pour installer des librairies
 
 L'utilisation de Python est basée sur de nombreuse librairies qui ne sont pas forcément installées au lycée.
 Pour voir la liste de celles qui sont installées au lycée, vous pouvez aller voir dans : `C:\Python3.7\Lib\site-packages`.
 Si vous voulez demander l'installation d'une librairie supplémentaire, faites un ticket (`Outils Profs > Support Informatique`).
-On peut aussi gérer les paquets à partir de Thonny (Outils -> Gérer les paquets).
+On peut aussi gérer les paquets à partir de Thonny (:guilabel:`Outils` → :guilabel:`Gérer les paquets`).
 
 ### Pydiderot
 
