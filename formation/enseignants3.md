@@ -126,6 +126,8 @@ Proposition de progression commune concernant l'algo au lycée (à re-discuter..
 
 ### Exemples en classe de seconde :
 
+Il faut échanger sur le type d'utilisations qui sont envisagées en maths et en physique.
+
 #### Afficher un repère avec la librairie pydiderotlibs :
 
 ```python
@@ -190,3 +192,4 @@ peut rendre service dans certains cas, avec des élèves débutants) :
 repeat(f,10)
 ```
 (Ici on demande de répéter 10 fois la fonction f.)
+
