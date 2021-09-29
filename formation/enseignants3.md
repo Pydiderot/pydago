@@ -89,7 +89,7 @@ Pour voir la liste de celles qui sont installées au lycée, vous pouvez aller v
 Si vous voulez demander l'installation d'une librairie supplémentaire, faites un ticket (`Outils Profs > Support Informatique`).
 On peut aussi gérer les paquets à partir de Thonny (:guilabel:`Outils` → :guilabel:`Gérer les paquets`).
 
-### Pydiderot
+### Pydiderot : une organisation hébergée sur Github
 
 Tout un tas de ressources sont disponibles sur un compte Github qui a été développé par l'équipe de maths (à la suite de Clément Spaier).
 https://github.com/Pydiderot
@@ -105,9 +105,9 @@ Proposition de progression commune concernant l'algo au lycée (à re-discuter..
 ### Seconde : 
 
  - fonction (expliquer les différences avec les fonctions en maths)
- - boucle (sans variable --> "répéter n fois")
+ - boucle sans variable --> "répéter n fois"
  - variable (en liaison avec les fonctions d'une variable en maths)
- - boucle avec variable, mais simple (que des while avec la variable compteur qui est utilisée de façon hyper standardisée)
+ - boucle avec variable, mais simple (seulement des boucles "while" avec la variable compteur qui est utilisée de façon hyper standardisée)
  - condition "if..." (pose peu de difficulté avec les élèves)
 
 
@@ -125,6 +125,17 @@ Proposition de progression commune concernant l'algo au lycée (à re-discuter..
 - rien de plus, retravail de ces notions
 
 ### Exemples en classe de seconde :
+
+#### Afficher un repère avec la librairie pydiderotlibs :
+
+```python
+from pydiderotlibs.repere import *
+  
+fenetre()
+```
+A la souris, on peut déplacer la fenêtre ; zoomer ; zoomer suivant un seul axe de cooordonnées.
+
+Il y a un lien dans la console pour accéder à la documentation de la librairie.
 
 #### Une fonction qui n'utilise presqu'aucune variable :
 
