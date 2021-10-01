@@ -2,6 +2,15 @@
 
 ## 1. Aspects techniques
 
+### Python
+Langage multiplateforme ordinateur, calculatrice, microcontroleur
+
+### IDE Environnement de développement
+Un IDE réunit :
+- un traitement de texte (à coloration syntaxique)
+- une console (accès direct)
+- un lancement de python
+
 ### L'IDE Thonny
 .. figure:: https://thonny.org/img/get_started.png
     :align: right
@@ -17,6 +26,10 @@ Quand on lance Thonny, il y a deux zones :
 (on ne peut pas l'enregistrer).
 C'est dans cette zone qu'apparaissent les résultats des commandes exécutées 
 depuis un fichier de la zone du haut.
+
+#### Autres IDE accessibles du lycée 
+- Edupython : connue et souvent montré en démo
+- Mu : Pour programmer certains microcontroleurs
 
 #### Quelques instructions à essayer dans la console :
 ```python
@@ -64,6 +77,26 @@ qui permet l'éxécution du script en mode « pas à pas ». Cela activera le me
 .. |bouton_debug| image:: /source/_static/bouton_debug.png
 .. |menu_debug| image:: /source/_static/menu_debug.png
 
+#### Librairies
+Python possède de très nombreuses librairies.
+Ce sont des bout de programmes déjà écrits qui permettent d'utiliser des fonctions parfois très complexes.
+
+par exemple la librairie mathématiques
+
+``` python
+import math
+print(math.sqrt(9))
+```
+
+Il y a plusieurs librairies classiques déjà installées :
+numpy, scipy, matplotlib, sympy, pygame 
+
+
+Pour voir la liste de celles qui sont installées au lycée, vous pouvez aller voir dans : `C:\Python3.7\Lib\site-packages`.
+
+Si vous voulez demander l'installation d'une librairie supplémentaire, faites un ticket (`Outils Profs > Support Informatique`).
+On peut aussi gérer les paquets à partir de Thonny (:guilabel:`Outils` → :guilabel:`Gérer les paquets`).
+
 
 ### iTALC
 
@@ -82,14 +115,50 @@ Avec iTALC on peut :
 - envoyer le contenu de son écran vers les écrans de tous les élèves (avec la commande "démo")
 - annoncer au groupe "je vais vous envoyer l'écran de -nom d'élève-" (avec la commande clic droit > "laisser faire une démo")
 
-### Procédure pour installer des librairies
-
-L'utilisation de Python est basée sur de nombreuse librairies qui ne sont pas forcément installées au lycée.
-Pour voir la liste de celles qui sont installées au lycée, vous pouvez aller voir dans : `C:\Python3.7\Lib\site-packages`.
-Si vous voulez demander l'installation d'une librairie supplémentaire, faites un ticket (`Outils Profs > Support Informatique`).
-On peut aussi gérer les paquets à partir de Thonny (:guilabel:`Outils` → :guilabel:`Gérer les paquets`).
-
 ### Pydiderot : une organisation hébergée sur Github
+
+#### librairies de pydiderotlibs :
+Pour faire des graphiques même simples, les manuels utilisent les bibliothéques numpy et matplotlib
+``` python
+import numpy as np
+import matplotlib.pyplot as plt
+# U et I sont à compléter par les élèves
+# Tableau entre crochets, nombres séparés d'une virgule
+U = np.array([-5.0,-4.0,-3.0,-1.0,0,1.0,2.0,3.0,4.0,5.0])
+I = np.array([-0.052,-0.039,-0.028,-0.011,0,0.01,0.021,0.032,0.039,0.05])
+
+#Tracé de la courbe
+plt.grid()
+plt.title('Caractéristique tension-intensité')
+plt.xlabel('I(en A)')
+plt.ylabel('U(en V)')
+plt.plot(I,U,'+',label= 'Points issus de la mesure')
+plt.legend()
+
+# Effectuer une regression linéaire et la tracer
+Umod = np.polyfit(I,U,1)
+print('Um =', round(Umod[0],2),'x','I','+',round(Umod[1],4))
+
+Reg = np.poly1d(Umod)
+x = np.linspace(1.2*min(I), 1.2*max(I))
+y = Reg(x)
+plt.plot(x, Reg(x))
+
+plt.show()
+
+```
+Il existe des librairies qui permettent de simplifier cette écriture.
+En particulier la librairie **pydiderotlibs** : 
+``` python
+from pydiderotlibs.repere import *
+fenetre()
+
+i=0
+while i<10:
+    point(i,i**2)
+    i=i+1
+```
+
 
 Tout un tas de ressources sont disponibles sur un compte Github qui a été développé par l'équipe de maths (à la suite de Clément Spaier).
 https://github.com/Pydiderot
@@ -135,6 +204,12 @@ from pydiderotlibs.repere import *
   
 fenetre()
 ```
+Remarque : l'instruction 
+```python
+window()
+```
+est un alias de fenetre().
+
 A la souris, on peut déplacer la fenêtre ; zoomer ; zoomer suivant un seul axe de cooordonnées.
 
 Il y a un lien dans la console pour accéder à la documentation de la librairie.
@@ -193,3 +268,7 @@ repeat(f,10)
 ```
 (Ici on demande de répéter 10 fois la fonction f.)
 
+### Voir le fichier avec tous les programmes de 2de
+
+### Les programmes python de Physique Chimie par l'académie de Guyane
+https://physique-chimie.dis.ac-guyane.fr/Banque-de-programme-python-pour-le-lycee.html
